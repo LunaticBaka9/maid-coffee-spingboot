@@ -1,9 +1,11 @@
-package com.maid_coffe.demo;
+package com.maid_coffee;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.maid_coffee.mapper")
 public class DemoApplication {
 
 	public static void main(String[] args) {
