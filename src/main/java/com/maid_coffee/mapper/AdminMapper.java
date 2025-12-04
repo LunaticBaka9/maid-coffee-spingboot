@@ -9,6 +9,6 @@ import com.maid_coffee.entity.Admin;
 @Mapper
 public interface AdminMapper {
 
-    List<Admin> selectAll();
+    List<Admin> selectAllAdmins();
 
 }

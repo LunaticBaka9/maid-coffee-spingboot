@@ -9,29 +9,33 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.github.pagehelper.PageInfo;
 import com.maid_coffee.common.Result;
-import com.maid_coffee.entity.Admin;
-import com.maid_coffee.service.AdminService;
+import com.maid_coffee.entity.User;
+import com.maid_coffee.service.UserService;
 
 import jakarta.annotation.Resource;
 
+
+
 @RestController
-@RequestMapping("/admin")
-public class AdminController {
+@RequestMapping("/user")
+public class UserController {
     
     @Resource
-    AdminService adminService;
+    UserService userService;
 
-    @GetMapping("/selectAllAdmins")  //完整的请求路径 /admin/selectAllAdmins
-    public Result selectAllAdmins() {
-        List<Admin> adminList = adminService.selectAllAdmins();
-        return Result.success(adminList);
+     @GetMapping("/selectAllUsers")  //完整的请求路径 /user/selectAllUsers
+    public Result selectAllUsers() {
+        List<User> userList = userService.selectAllUsers();
+        return Result.success(userList);
     }
     
     @GetMapping("/selectPage")
     public Result selectPage(@RequestParam(defaultValue="1") Integer pageNum,
-                             @RequestParam(defaultValue="10") Integer pageSize ){
-        PageInfo<Admin> pageInfo = adminService.selectPage(pageNum, pageSize);
+                             @RequestParam(defaultValue="10") Integer pageSize, 
+                             User user){
+        PageInfo<User> pageInfo = userService.selectPage(pageNum, pageSize, user);
         return Result.success(pageInfo);
     }
     
 }
+

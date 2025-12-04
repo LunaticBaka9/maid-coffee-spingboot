@@ -4,27 +4,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.maid_coffee.common.Result;
-import com.maid_coffee.service.AdminService;
-
-import jakarta.annotation.Resource;
 
 
 
 @RestController
 public class WebController {
 
-    @Resource
-    AdminService adminService;
-
-    @GetMapping("/hello")
+    @GetMapping("/")
     public Result hello(){
-        return Result.success("Just for Fucking Test");
-    }
-
-    @GetMapping("/admin")
-    public Result admin(String name) {
-        adminService.admin(name);
-        return Result.success("123123");
+        return Result.success("Springboot is Running");
     }
     
 }

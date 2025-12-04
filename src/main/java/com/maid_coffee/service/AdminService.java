@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.maid_coffee.entity.Admin;
 import com.maid_coffee.exception.CustomerException;
 import com.maid_coffee.mapper.AdminMapper;
@@ -25,7 +27,14 @@ public class AdminService {
         }
     }
 
-    public List<Admin> selectAll(){
-        return adminMapper.selectAll();
+    public List<Admin> selectAllAdmins(){
+        return adminMapper.selectAllAdmins();
+    }
+
+    public PageInfo<Admin> selectPage(Integer pageNum, Integer pageSize){
+        //开启分页查询
+        PageHelper.startPage(pageNum,pageSize);
+        List<Admin> list = adminMapper.selectAllAdmins();
+        return PageInfo.of(list);
     }
 }
