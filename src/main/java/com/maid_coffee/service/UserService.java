@@ -42,4 +42,8 @@ public class UserService {
         }
         userMapper.insert(user);
     }
+
+    public void update(User user){
+        userMapper.updateByUserId(user);
+    }
 }

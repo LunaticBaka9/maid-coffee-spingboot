@@ -27,4 +27,9 @@
         select * from `user` where username = #{username}
     </select>
 
+    <update id="updateByUserId">
+        update `user` set username=#{username}, password=#{password}, name=#{name}, email=#{email}, phone=#{phone}, userType=#{userType}
+        where userId = userId
+    </update>
+
 </mapper>

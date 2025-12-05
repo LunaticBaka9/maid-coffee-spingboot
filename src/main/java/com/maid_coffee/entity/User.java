@@ -3,7 +3,7 @@ package com.maid_coffee.entity;
 import java.util.Date;
 
 public class User {
-    private Integer Userid;
+    private Integer userId;
     private String username;
     private String password;
     private String name;
@@ -17,10 +17,10 @@ public class User {
     
     
     public Integer getUserId() {
-        return Userid;
+        return userId;
     }
-    public void setUserid(Integer Userid) {
-        this.Userid = Userid;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
     public String getUsername() {
         return username;
