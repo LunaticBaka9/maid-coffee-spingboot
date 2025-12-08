@@ -46,4 +46,14 @@ public class UserService {
     public void update(User user){
         userMapper.updateByUserId(user);
     }
+
+    public void deleteByUserId(User user){
+        userMapper.deleteByUserId(user);
+    }
+
+    public void deleteBatch(List<User> list){
+        for(User user: list){
+            this.deleteByUserId(user);
+        }
+    }
 }

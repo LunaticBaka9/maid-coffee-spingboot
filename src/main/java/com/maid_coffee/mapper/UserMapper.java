@@ -16,4 +16,6 @@ public interface UserMapper {
     User selectByUsername(String username);
 
     void updateByUserId(User user);
+
+    void deleteByUserId(User user);
 }

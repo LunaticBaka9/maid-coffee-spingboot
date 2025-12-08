@@ -52,6 +52,20 @@ public class UserController {
         userService.update(user);
         return Result.success();
     }
+
+    @PutMapping("/delete")
+    public Result delete(@RequestBody User user){
+        
+        userService.deleteByUserId(user);
+        return Result.success();
+    }
+
+    @PutMapping("/deleteBatch")
+    public Result deleteBatch(@RequestBody List<User> list){
+        
+        userService.deleteBatch(list);
+        return Result.success();
+    }
     
 }
 

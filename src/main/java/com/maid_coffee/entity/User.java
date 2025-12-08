@@ -12,7 +12,7 @@ public class User {
     private String userType;
     private Date createTime;
     private Date deleteTime;
-    private boolean isUsing;
+    private boolean userusing;
     
     
     
@@ -64,11 +64,11 @@ public class User {
     public void setDeleteTime(Date deleteTime) {
         this.deleteTime = deleteTime;
     }
-    public boolean isUsing() {
-        return isUsing;
+    public boolean userusing() {
+        return userusing;
     }
-    public void setUsing(boolean isUsing) {
-        this.isUsing = isUsing;
+    public void setUserusing(boolean userusing) {
+        this.userusing = userusing;
     }
     public String getUserType() {
         return userType;

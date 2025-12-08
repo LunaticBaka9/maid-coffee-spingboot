@@ -11,14 +11,14 @@
         <where>
                 <if test="username != null">username like concat('%', #{username}, '%')</if>
                 <if test="name != null">and name like concat('%', #{name}, '%')</if>
-                and isUsing != 0
+                and userusing != 0
         </where>
         
     </select>
 
     <insert id="insert">
-        insert into `user` (username, password, name, email, phone, userType)
-        values(#{username}, #{password}, #{name}, #{email}, #{phone}, #{userType})
+        insert into `user` (username, password, name, email, phone, userType, createTime)
+        values(#{username}, #{password}, #{name}, #{email}, #{phone}, #{userType}, NOW())
     </insert>
 
     <!-- selectByUsername --> 
@@ -29,7 +29,11 @@
 
     <update id="updateByUserId">
         update `user` set username=#{username}, password=#{password}, name=#{name}, email=#{email}, phone=#{phone}, userType=#{userType}
-        where userId = userId
+        where userId = #{userId}
     </update>
 
+    <update id="deleteByUserId">
+        update `user` set userusing = 0, deleteTime = NOW() 
+        where userId = #{userId}
+    </update>
 </mapper>
