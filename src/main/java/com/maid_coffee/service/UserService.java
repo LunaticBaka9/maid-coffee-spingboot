@@ -56,4 +56,16 @@ public class UserService {
             this.deleteByUserId(user);
         }
     }
+
+    public User login(User user){
+        //验证账号是否存在
+        User dbuser = userMapper.selectByUsername(user.getUsername());
+        if(dbuser == null){
+            throw new CustomerException("账号不存在");
+        }
+        if(!dbuser.getPassword().equals(user.getPassword())){
+            throw new CustomerException("账号或密码错误");
+        }
+        return dbuser;
+    }
 }

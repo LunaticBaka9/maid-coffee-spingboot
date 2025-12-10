@@ -25,7 +25,7 @@ public class UserController {
     @Resource
     UserService userService;
 
-     @GetMapping("/selectAllUsers")  //完整的请求路径 /user/selectAllUsers
+    @GetMapping("/selectAllUsers")  //完整的请求路径 /user/selectAllUsers
     public Result selectAllUsers() {
         List<User> userList = userService.selectAllUsers();
         return Result.success(userList);
