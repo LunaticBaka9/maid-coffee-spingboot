@@ -7,33 +7,33 @@
 <mapper namespace="com.maid_coffee.mapper.AdminMapper">
     
     <select id="selectAllAdmins" resultType="com.maid_coffee.entity.Admin">
-        select * from `admin`
+        select * from `user`
         <where>
                 <if test="username != null">username like concat('%', #{username}, '%')</if>
                 <if test="name != null">and name like concat('%', #{name}, '%')</if>
-                and userusing != 0
+                and userusing != 0 and userType = "admin"
         </where>
         
     </select>
 
     <insert id="insert">
-        insert into `admin` (username, password, name, email, phone, userType, createTime)
-        values(#{username}, #{password}, #{name}, #{email}, #{phone}, #{userType}, NOW())
+        insert into `user` (username, password, name, email, phone, userType, createTime)
+        values(#{username}, #{password}, #{name}, #{email}, #{phone}, "admin", NOW())
     </insert>
 
     <!-- selectByUsername --> 
 
     <select id="selectByUsername">
-        select * from `admin` where username = #{username}
+        select * from `user` where username = #{username} and userType = "admin"
     </select>
 
     <update id="updateByUserId">
-        update `admin` set username=#{username}, password=#{password}, name=#{name}, email=#{email}, phone=#{phone}, userType=#{userType}
+        update `user` set username=#{username}, password=#{password}, name=#{name}, email=#{email}, phone=#{phone}, userType=#{userType}
         where userId = #{userId}
     </update>
 
     <update id="deleteByUserId">
-        update `admin` set userusing = 0, deleteTime = NOW() 
+        update `user` set userusing = 0, deleteTime = NOW() 
         where userId = #{userId}
     </update>
     

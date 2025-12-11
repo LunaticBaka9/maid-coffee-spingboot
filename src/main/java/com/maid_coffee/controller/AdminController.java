@@ -40,7 +40,7 @@ public class AdminController {
     
     @PostMapping("/add")
     public Result add(@RequestBody Admin admin) {
-        //TODO: process POST request
+        
         adminService.add(admin);
         return Result.success();
     }

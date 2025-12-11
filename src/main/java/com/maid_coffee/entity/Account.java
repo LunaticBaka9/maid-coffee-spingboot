@@ -2,7 +2,7 @@ package com.maid_coffee.entity;
 
 import java.util.Date;
 
-public class Admin extends Account{
+public class Account {
     private Integer userId;
     private String username;
     private String password;
@@ -75,6 +75,4 @@ public class Admin extends Account{
     public void setUserusing(boolean userusing) {
         this.userusing = userusing;
     }
-    
-    
 }

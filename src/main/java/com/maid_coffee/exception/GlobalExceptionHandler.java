@@ -24,6 +24,6 @@ public class GlobalExceptionHandler {
     @ResponseBody //将result对象转换成 json格式
     public Result customerError(CustomerException e){
         log.error("自定义错误", e);
-        return Result.error(e.getCode(),e.getMsg());
+        return Result.error(e.getCode(), e.getMsg());
     }
 }

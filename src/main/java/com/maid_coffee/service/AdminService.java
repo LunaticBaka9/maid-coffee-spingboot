@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.maid_coffee.entity.Account;
 import com.maid_coffee.entity.Admin;
 import com.maid_coffee.exception.CustomerException;
 import com.maid_coffee.mapper.AdminMapper;
@@ -59,13 +60,13 @@ public class AdminService {
         }
     }
 
-    public Admin login(Admin admin){
+    public Admin login(Account account){
         //验证账号是否存在
-        Admin dbuser = adminMapper.selectByUsername(admin.getUsername());
+        Admin dbuser = adminMapper.selectByUsername(account.getUsername());
         if(dbuser == null){
             throw new CustomerException("账号不存在");
         }
-        if(!dbuser.getPassword().equals(admin.getPassword())){
+        if(!dbuser.getPassword().equals(account.getPassword())){
             throw new CustomerException("账号或密码错误");
         }
         return dbuser;

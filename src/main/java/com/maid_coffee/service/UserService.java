@@ -34,11 +34,17 @@ public class UserService {
         //用户名查重
         User dbUser = userMapper.selectByUsername(user.getUsername());
         if(dbUser != null){
-            throw new CustomerException("用户名重复");
+            throw new CustomerException("账号重复");
         }
         //默认密码
         if(StrUtil.isBlank(user.getPassword())){
             user.setPassword("u123123");
+        }
+        if(StrUtil.isBlank(user.getUserType())){
+            user.setUserType("user");
+        }
+        if(StrUtil.isBlank(user.getName())){
+            user.setName(user.getUsername());
         }
         userMapper.insert(user);
     }
@@ -67,5 +73,9 @@ public class UserService {
             throw new CustomerException("账号或密码错误");
         }
         return dbuser;
+    }
+
+    public void register(User user){
+        this.add(user);
     }
 }

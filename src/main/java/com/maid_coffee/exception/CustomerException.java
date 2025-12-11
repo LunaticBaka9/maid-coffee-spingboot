@@ -1,6 +1,5 @@
 package com.maid_coffee.exception;
 
-
 //自定义异常，运行时异常
 public class CustomerException extends RuntimeException{
     private String code;

@@ -41,7 +41,7 @@ public class UserController {
     
     @PostMapping("/add")
     public Result add(@RequestBody User user) {
-        //TODO: process POST request
+        
         userService.add(user);
         return Result.success();
     }
