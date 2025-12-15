@@ -6,6 +6,7 @@ public class CustomerException extends RuntimeException{
     private String msg;
     
     public CustomerException(String code, String msg){
+        super(msg);
         this.code = code;
         this.msg = msg;
     }

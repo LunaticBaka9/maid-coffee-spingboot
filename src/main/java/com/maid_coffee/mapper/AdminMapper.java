@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.maid_coffee.entity.Admin;
 
-
 @Mapper
 public interface AdminMapper {
 

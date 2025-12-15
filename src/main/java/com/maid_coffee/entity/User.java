@@ -13,8 +13,7 @@ public class User extends Account{
     private Date createTime;
     private Date deleteTime;
     private boolean userusing;
-    
-    
+   
     public Integer getUserId() {
         return userId;
     }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"
+>
+
+<mapper namespace="com.maid_coffee.mapper.ShopMapper">
+    <select id="selectAllShops" resultType="com.maid_coffee.entity.Shop">
+        select * from `shop`
+        <where>
+                <if test="shopId != null">shopId like concat('%', #{shopId}, '%')</if>
+                <if test="shopName != null">and shopName like concat('%', #{shopName}, '%')</if>
+                <if test="location != null">and location like concat('%', #{location}, '%')</if>
+                and shopusing != 0
+        </where>
+        
+    </select>
+
+    <insert id="insert">
+        insert into `shop` (shopName, slogn, location, address, tel, price, openTime)
+        values(#{shopName}, #{slogn}, #{location}, #{address}, #{tel}, #{price}, #{openTime})
+    </insert>
+
+    <select id="selectByShopName">
+        select * from `shop` where shopName = #{shopName}
+    </select>
+    
+    <update id="updateByShopId">
+        update `shop` set shopName=#{shopName}, slogn=#{slogn}, location=#{location}, address=#{address}, tel=#{tel}, price=#{price}, openTime=#{openTime}
+        where shopId = #{shopId}
+    </update>
+
+    <update id="deleteByShopId">
+        update `shop` set shopusing = 0
+        where shopId = #{shopId}
+    </update>
+</mapper>

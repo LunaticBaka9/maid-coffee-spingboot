@@ -14,7 +14,6 @@ public class Admin extends Account{
     private Date deleteTime;
     private boolean userusing;
     
-    
     public Integer getUserId() {
         return userId;
     }
