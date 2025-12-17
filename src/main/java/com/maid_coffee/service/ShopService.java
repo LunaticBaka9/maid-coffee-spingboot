@@ -18,8 +18,12 @@ public class ShopService {
     @Resource
     ShopMapper shopMapper;
 
-     public List<Shop> selectAllShops(){
+    public List<Shop> selectAllShops(){
         return shopMapper.selectAllShops(null);
+    }
+
+    public Shop selectByShopId(Integer shopId){
+        return shopMapper.selectByShopId(shopId);
     }
 
     public PageInfo<Shop> selectPage(Integer pageNum, Integer pageSize, Shop shop){

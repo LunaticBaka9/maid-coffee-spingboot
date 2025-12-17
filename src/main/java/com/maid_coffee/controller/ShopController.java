@@ -3,6 +3,7 @@ package com.maid_coffee.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,10 +25,16 @@ public class ShopController {
     @Resource
     ShopService shopService;
 
-     @GetMapping("/selectAllShops")  
+    @GetMapping("/selectAllShops")  
     public Result selectAllShops() {
         List<Shop> shopList = shopService.selectAllShops();
         return Result.success(shopList);
+    }
+
+    @GetMapping("/selectShopById/{shopId}")
+    public Result selectShopById(@PathVariable Integer shopId) {
+        Shop shop = shopService.selectByShopId(shopId);
+        return Result.success(shop);
     }
 
     @GetMapping("/selectPage")

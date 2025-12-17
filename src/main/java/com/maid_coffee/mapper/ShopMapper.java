@@ -11,6 +11,8 @@ public interface ShopMapper {
     
     List<Shop> selectAllShops(Shop shop);
 
+    Shop selectByShopId(Integer shopId);
+
     void insert(Shop shop);
 
     Shop selectByShopName(String shopName);

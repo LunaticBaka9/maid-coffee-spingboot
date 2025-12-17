@@ -2,7 +2,7 @@ package com.maid_coffee.entity;
 
 import java.util.Date;
 
-public class User extends Account{
+public class User {
     private Integer userId;
     private String username;
     private String password;
