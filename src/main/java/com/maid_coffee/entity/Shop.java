@@ -23,56 +23,60 @@ public class Shop {
     private String twitter;
     private String facebook;
     private String menu;
+    private String pmenu;
     private String tags;                                       
-    private int Sun;
-    private int Mon;
-    private int Tues;
-    private int Wed;
-    private int Thur;
-    private int Fri;
-    private int Sat;
+    private int sun;
+    private int mon;
+    private int tues;
+    private int wed;
+    private int thur;
+    private int fri;
+    private int sat;
     
+    public String getPmenu() {
+        return pmenu;
+    }
     public int getSun() {
-        return Sun;
+        return sun;
     }
     public void setSun(int sun) {
-        Sun = sun;
+        this.sun = sun;
     }
     public int getMon() {
-        return Mon;
+        return mon;
     }
     public void setMon(int mon) {
-        Mon = mon;
+        this.mon = mon;
     }
     public int getTues() {
-        return Tues;
+        return tues;
     }
     public void setTues(int tues) {
-        Tues = tues;
+        this.tues = tues;
     }
     public int getWed() {
-        return Wed;
+        return wed;
     }
     public void setWed(int wed) {
-        Wed = wed;
+        this.wed = wed;
     }
     public int getThur() {
-        return Thur;
+        return thur;
     }
     public void setThur(int thur) {
-        Thur = thur;
+        this.thur = thur;
     }
     public int getFri() {
-        return Fri;
+        return fri;
     }
     public void setFri(int fri) {
-        Fri = fri;
+        this.fri = fri;
     }
     public int getSat() {
-        return Sat;
+        return sat;
     }
     public void setSat(int sat) {
-        Sat = sat;
+        this.sat = sat;
     }
     public String getOffical() {
         return offical;
@@ -199,6 +203,12 @@ public class Shop {
     }
     public void setTags(String tags) {
         this.tags = tags;
+    }
+    public String get5() {
+        return pmenu;
+    }
+    public void setPmenu(String pmenu) {
+        this.pmenu = pmenu;
     }
 
 }
