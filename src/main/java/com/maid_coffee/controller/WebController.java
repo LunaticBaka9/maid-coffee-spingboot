@@ -12,12 +12,13 @@ import com.maid_coffee.service.UserService;
 import jakarta.annotation.Resource;
 
 
+
 @RestController
 public class WebController {
     
     @Resource
     UserService userService;
-
+    
     @GetMapping("/")
     public Result hello(){
         return Result.success("Springboot is Running");

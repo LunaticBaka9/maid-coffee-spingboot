@@ -9,9 +9,9 @@
 		<relativePath />
 	</parent>
 	<groupId>com.maid_coffe</groupId>
-	<artifactId>springboot</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot</name>
+	<artifactId>cofewiki</artifactId>
+	<version>0.0.1</version>
+	<name>cofewiki</name>
 	<description>springboot</description>
 	
 	<properties>
