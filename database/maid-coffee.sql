@@ -11,7 +11,7 @@
  Target Server Version : 80012 (8.0.12)
  File Encoding         : 65001
 
- Date: 23/12/2025 21:46:22
+ Date: 26/12/2025 22:27:13
 */
 
 SET NAMES utf8mb4;
@@ -41,7 +41,7 @@ CREATE TABLE `shop`  (
 -- ----------------------------
 -- Records of shop
 -- ----------------------------
-INSERT INTO `shop` VALUES (32005, '不良メイド喫茶・Bar黒月柏店', '世界の終末期に不良たちが集う酒場！ゴシックなメイドがお給仕する柏のコンカフェ！', 90, '04-7110-3155', '千葉県柏市柏3丁目6-16 磯野ビル4F', '周二〜周四 19点〜23点/周五・周六 19点〜4点30分', '千葉県', 1, 'api/img/shop/cover/shop_image_32005_240x240.jpg', '咖啡厅BAR （con cafe）', '2025-12-22 21:37:23');
+INSERT INTO `shop` VALUES (32005, '不良メイド喫茶・Bar黒月柏店', '世界の終末期に不良たちが集う酒場！ゴシックなメイドがお給仕する柏のコンカフェ！', 90, '04-7110-3155', '千葉県柏市柏3丁目6-16 磯野ビル4F', '周二〜周四 19点〜23点/周五・周六 19点〜4点30分', '千葉県', 1, 'api/img/shop/cover/shop_image_32005_240x240.jpg', '咖啡厅BAR （con cafe）', '2025-12-23 22:25:53');
 INSERT INTO `shop` VALUES (15242, '不良メイド喫茶・Bar黒月横浜本店', '世界の終末期に不良たちが集う酒場！ゴシックな特攻服メイドがお給仕する横浜のコンカフェ！', 150, '045-306-9343', '神奈川県横浜市中区相生町5-79-3 ベルビル馬車道4F', '平日 19:00 ~ 23:00(L.O 22:30) 周五 19:00 ~ 25:00(L.O 24:30) 周六、节假日前 18:00〜25:00(L.O 24:30) 周日、节假日 18:00〜23:00(L.O 22:30)', '神奈川県', 1, 'api/img/shop/cover/shop_image_15242_240x240.jpg', '咖啡厅BAR （con cafe）', '2025-12-16 18:16:45');
 INSERT INTO `shop` VALUES (12522, 'アンネット', '\r\n\r\n大阪日本橋で唯一のカントリーがコンセプト', 135, '08061773652', ' 	\r\n大阪府大阪市浪速区日本橋4-13-15', '2023年7月开放 平日17-22 周六日假期12-22', '大阪府', 1, 'api/img/shop/cover/shop_image_12522_240x240.jpg', '咖啡厅BAR （con cafe）', NULL);
 INSERT INTO `shop` VALUES (12431, '秋葉原☆うさぎと星のコンカフェ LittleStarRabbit', '秋葉原☆お星さまとうさぎがコンセプトの可愛いコンカフェ', 70, '〒101-0021', '東京都東京都千代田区外神田4丁目6-10 1/3レジデンス5F', '月〜木：17:00-23:00 金・祝前日：17:00-翌朝5:00 土：12:00-翌朝5:00 日・祝日：12:00-23:00', '東京都', 1, 'api/img/shop/cover/shop_image_12431_240x240.jpg', '咖啡厅BAR （con cafe）', NULL);
@@ -85,7 +85,7 @@ CREATE TABLE `shopdetails`  (
 -- ----------------------------
 -- Records of shopdetails
 -- ----------------------------
-INSERT INTO `shopdetails` VALUES ('世界末日不良们聚集的酒馆！哥特式女仆服务的柏咖啡厅！\r\n\r\n每年由女仆煮大麦制作的原创手工啤酒大受欢迎！这里提供各种美味和有趣的美食，包括禁止的CBD啤酒！还可以品尝女仆亲手做的料理哦！ 让人联想到世界末日的涂鸦艺术和真实赛博朋克风格的异空间值得一看！\r\n\r\n只充电1100日元 \r\n时间无限制 / 卡拉OK唱到饱 / 有原创鸡尾酒特典 / 卡拉OK点播OK \r\n从JR柏站东口步行5分钟（从上野乘坐电车直通约30分钟）', 32005, ' 可以制作手工啤酒的咖啡厅（con cofe）', '既能唱卡拉ok又能做DJ ! ！', '充满涂鸦艺术的网络空间', 'https://lit.link/kurotsukikswd ', 'https://x.com/kurotsuki_kswd', 'https://www.facebook.com/kurotsukikswd ', '充值1,100日元\r\n\r\n时间无限制/卡拉ok无限畅唱\r\n饮料700日元起，食物600日元起可以订购。\r\n\r\n没有任何额外费用！请每小时至少订购1个订单！可以进行切奇摄影，但这是原创鸡尾酒的特典，详情请咨询演员。', '面向女性/面向男性/团体OK /商品销售/酒精/可刷卡/活动日/每日菜单/可预约/可包场/原创制服/可吸烟/优惠券/热闹/深夜营业/大提琴/现场演出/电源/卡拉ok /', 0, 1, 1, 1, 1, 1, 0, '无限量生啤酒是心脏地带\r\n丰富的威士忌系列\r\n香槟1万日元以下~', NULL);
+INSERT INTO `shopdetails` VALUES ('世界末日不良们聚集的酒馆！哥特式女仆服务的柏咖啡厅！\r\n\r\n每年由女仆煮大麦制作的原创手工啤酒大受欢迎！这里提供各种美味和有趣的美食，包括禁止的CBD啤酒！还可以品尝女仆亲手做的料理哦！ 让人联想到世界末日的涂鸦艺术和真实赛博朋克风格的异空间值得一看！\r\n\r\n只充电1100日元 \r\n时间无限制 / 卡拉OK唱到饱 / 有原创鸡尾酒特典 / 卡拉OK点播OK \r\n从JR柏站东口步行5分钟（从上野乘坐电车直通约30分钟）', 32005, ' 可以制作手工啤酒的咖啡厅（con cofe）', '既能唱卡拉ok又能做DJ ! ！', '充满涂鸦艺术的网络空间', 'https://lit.link/kurotsukikswd ', 'https://x.com/kurotsuki_kswd', 'https://www.facebook.com/kurotsukikswd ', '充值1,100日元\r\n\r\n时间无限制/卡拉ok无限畅唱\r\n饮料700日元起，食物600日元起可以订购。\r\n\r\n没有任何额外费用！请每小时至少订购1个订单！可以进行切奇摄影，但这是原创鸡尾酒的特典，详情请咨询演员。', '面向女性/面向男性/团体OK /商品销售/酒精/可刷卡/活动日/每日菜单/可预约/可包场/原创制服/可吸烟/优惠券/热闹/深夜营业/大提琴/现场演出/电源/卡拉ok /', 0, 1, 1, 1, 1, 1, 0, '无限量生啤酒是心脏地带\r\n丰富的威士忌系列\r\n香槟1万日元以下~', 'api/img/shop/cover/shop_image_12424_240x240.jpg');
 INSERT INTO `shopdetails` VALUES ('20xx年，毁灭世界的末期\r\n欢迎来到伫立在东方魔窟中的街角酒馆\r\n这里是流浪汉和流氓聚集的不良少年们的聚集地\r\n与朋友见面，喝酒，分享\r\n干杯是我们的魔法语言，那么今晚也开始宴会吧。\r\n', 15242, '穿着特攻服的女仆迎接长发女仆', '免费携带！食物自带&外卖OK', '连LiveHouse和俱乐部都自愧不如的DJ展台', 'https://lit.link/kurotsukibay', 'https://x.com/kurotsuki_bay', 'https://www.facebook.com/kurotsukibay', '充值1,100日元（时间无限制）\r\n收费制\r\n筱木¥800（含税¥880）/60分钟+1饮料\r\n\r\n无限畅饮制\r\n非阿尔¥2,000（含税¥2,200）/60分钟\r\n酒精¥3,000（含税¥3,300）/60分钟\r\n附啤酒¥3,300（含税¥3,630）/60分钟\r\n\r\n携带和外卖OK（不可手工制作）\r\n卡拉ok唱到饱\r\n随便扔飞镖', '面向女性 / 面向男性 / 团体OK / 商品销售 / 积分卡 / 酒精 / 手机电波 / 无线局域网 / 可刷卡支付 / 活动日 / 可预约 / 可包场 / 原创制服 / 可吸烟 / 优惠券 / 热闹 / 深夜营业 / 大提琴 / 电源 / 手机充电服务 / 卡拉ok  / 畅饮菜单 /', 1, 1, 1, 1, 1, 1, 1, NULL, NULL);
 INSERT INTO `shopdetails` VALUES ('大阪日本桥唯一以乡村为概念的店\r\n非常适合咖啡初学者^ ^\r\n因为要招募开业工作人员', 12522, '大阪日本桥唯一的乡村概念', '制服5种', NULL, 'https://twitter.com/annette_rr1', 'https://twitter.com/annette_rr1', '', '软饮料\r\n酒精\r\n\r\n只在周末和节假日吐司专门店！', '欢迎回来/午餐套餐/商品销售/酒精/无线网络/每日菜单/悠闲/萌萌蛋包饭/切奇/手机充电服务/无限畅饮菜单/', 1, 1, 1, 1, 1, 1, 1, NULL, NULL);
 INSERT INTO `shopdetails` VALUES (NULL, 12431, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
@@ -139,5 +139,22 @@ INSERT INTO `user` VALUES (14, 'register', '123123', 'register', 'test@test.com'
 INSERT INTO `user` VALUES (15, 'test3', '123', 'test3', '123@er.vom', '123', '2025-12-11 17:37:21', NULL, 1, 'user');
 INSERT INTO `user` VALUES (16, 'admin', '123456', '管理员1', 'admin@test.com', '12345678910', '2025-12-11 18:48:46', NULL, 1, 'admin');
 INSERT INTO `user` VALUES (17, 'adminTest', '12312322', 'testinsert', '123123', '1231233', '2025-12-11 19:02:48', '2025-12-11 19:03:39', 1, 'admin');
+
+-- ----------------------------
+-- Table structure for wiki
+-- ----------------------------
+DROP TABLE IF EXISTS `wiki`;
+CREATE TABLE `wiki`  (
+  `id` int(11) NOT NULL,
+  `content` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of wiki
+-- ----------------------------
+INSERT INTO `wiki` VALUES (1, NULL, 'cafeShop', '咖啡厅介绍');
 
 SET FOREIGN_KEY_CHECKS = 1;
