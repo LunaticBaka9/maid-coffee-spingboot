@@ -13,6 +13,7 @@ public class Shop {
     private int price;
     private boolean shopusing;
     private String coverPath;
+    private String shopImg;
     private String shopType;
     private Date updateTime;
     private String intro;
@@ -32,6 +33,7 @@ public class Shop {
     private int thur;
     private int fri;
     private int sat;
+    
     
     public String getPmenu() {
         return pmenu;
@@ -209,6 +211,12 @@ public class Shop {
     }
     public void setPmenu(String pmenu) {
         this.pmenu = pmenu;
+    }
+    public String getShopImg() {
+        return shopImg;
+    }
+    public void setShopImg(String shopImg) {
+        this.shopImg = shopImg;
     }
 
 }
